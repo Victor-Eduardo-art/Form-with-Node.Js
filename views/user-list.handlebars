@@ -1,0 +1,21 @@
+<h2>Lista de usuários</h2>
+
+<table>
+   <thead>
+      <th>Nome</th>
+      <th>E-mail</th>
+      <th>Id</th>
+      <th> </th>
+   </thead>
+
+   <tbody>
+      {{#each users}}
+      <tr>
+         <td>{{dataValues.name}}</td>
+         <td>{{dataValues.email}}</td>>
+         <td>{{dataValues.id}}</td>
+         <td><a href="/delete/{{dataValues.id}}"><button>Deletar</button></a></td>
+      </tr>
+      {{/each}}
+   </tbody>
+</table>
